@@ -1,0 +1,18 @@
+import random
+
+soru = 1
+while (soru == 1):
+    print("")
+    dizi = " +-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+    uzunluk = int(input("Parolanız ne kadar uzun olacak:   "))
+
+    sifre = ""
+
+    for i in range(uzunluk):
+        sifre = sifre + random.choice(dizi)
+
+    print("Şifreniz bu olarak şeçildi : " + sifre)
+    print("")
+
+    soru = int(input("Şifreni beğenmediyseniz ve yenisini istiyorsanız 1, istemiyorsanız 0 yazın  "))
